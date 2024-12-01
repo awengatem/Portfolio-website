@@ -1,0 +1,36 @@
+.content_project-title {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--hero-text-color);
+  font-family: 'Dank Mono', sans-serif;
+  margin-top: -2rem;
+}
+.content__container {
+  width: 90vw;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax(250px, 350px));
+  grid-gap: 30px;
+}
+
+.content__item {
+  background-color: var(--hero-text-color);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+  .content__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+  }
+}
+
+@media (max-width: 600px) {
+  .content__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 400px);
+  }
+}

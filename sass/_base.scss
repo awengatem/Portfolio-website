@@ -1,0 +1,44 @@
+@import 'header';
+@import 'content';
+@import 'footer';
+@import 'section';
+
+:root {
+  --background-color: #eeeee4;
+  --text-color: #333;
+  --hero-text-color: #827d7d;
+  --color-text-blue: #3498db;
+
+  --color-facebook: #1877f2;
+  --color-instagram: linear-gradient(45deg, #f58529, #d32f6a, #9b4f96, #f9a825);
+  --color-linkedln: #0077b5;
+  --color-github: #181717;
+  --color-whtasapp: #25d366;
+
+  --navbar__hover-color: #cd5c5c;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  line-height: 1.6;
+  padding-top: 8rem;
+  overflow: scroll;
+}
+
+body {
+  background-color: var(--background-color);
+}

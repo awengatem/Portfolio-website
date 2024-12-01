@@ -1,0 +1,100 @@
+.footer__content {
+  height: 20rem;
+  padding: 2rem 5%;
+  color: var(--hero-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.footer__large-heading {
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: 'Poppins';
+}
+.footer__media-icons {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+//icons
+.fa-facebook:hover {
+  color: var(--color-facebook);
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-square-instagram:hover {
+  background: linear-gradient(45deg, #f58529, #d32f6a, #9b4f96, #f9a825);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-linkedin:hover {
+  color: var(--color-linkedln);
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-github:hover {
+  color: var(--color-github);
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-square-whatsapp:hover {
+  color: var(--color-whtasapp);
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-brands:not(:last-child) {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.fa-arrow-up {
+  position: absolute;
+  right: 0;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--hero-text-color);
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.footer-small-heading {
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .fa-arrow-up {
+    position: absolute;
+    right: 0;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--hero-text-color);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+}
